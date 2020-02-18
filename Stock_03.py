@@ -39,7 +39,7 @@ model.train(X)
 hidden_states = model.decode(X)
 
 # 打印参数
-print "Transition matrix: ", model.transmat_prob
+print ("Transition matrix: ", model.transmat_prob)
 print("Means and vars of each hidden state")
 for i in range(model.n_state):
     print("{0}th hidden state".format(i))
